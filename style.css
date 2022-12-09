@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  color: #212121;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 6px 8px;
+  background: #e0e1e2;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+
+input,
+select {
+  padding: 5px 8px;
+  border: 1px solid #dededf;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #85b7d9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 300px;
+  max-width: 100vw;
+}
+
+#video-player {
+  width: 512px;
+  max-width: 100vw;
+  height: 512px;
+}
+
+#dynamic-elements {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  #dynamic-elements {
+    padding: 10px;
+    max-height: calc(100vh - 200px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+#dynamic-elements label {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dynamic-elements input,
+#dynamic-elements select {
+  width: 150px;
+}
+
+#create-render-button,
+#get-image-button {
+  margin-top: 20px;
+  align-self: center;
+}
