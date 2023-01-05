@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Inter', sans-serif;
   color: #212121;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 button {
@@ -90,7 +90,8 @@ select:focus {
 }
 
 #create-render-button,
-#get-image-button {
+#play-button,
+#pause-button {
   margin-top: 20px;
   align-self: center;
 }
